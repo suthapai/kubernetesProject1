@@ -13,4 +13,4 @@ RUN unzip academic-education.zip
 RUN cp -rvf academic-education/* .
 RUN rm -rf academic-education academic-education.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
