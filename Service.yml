@@ -1,14 +1,14 @@
 kind: Service                             
 apiVersion: v1
 metadata:
-  name: devops1
+  name: Kube1_deploy
   labels:
-    app: devops1
+    app: Kube1_deploy
 spec:
   ports:
     - port: 8080                               
       targetPort: 80                    
       nodePort: 31200
   selector:
-    app: devops1                    
+    app: Kube1_deploy                    
   type: LoadBalancer                   
