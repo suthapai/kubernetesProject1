@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-    name: Kube1_deploy
+    name: Kube1_deploy_1
 spec:
     replicas: 3
     selector:
@@ -10,10 +10,10 @@ spec:
     template:
       metadata:
         labels:
-          app: devops1
+          app: Kube1_deploy
         spec:
           containers:
-          - name: devops1
+          - name: Kube1_deploy
             image: sujetha/pineline_demo1
             imagePullPolicy: Always
             ports:
